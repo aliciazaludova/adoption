@@ -2,11 +2,11 @@ const loadPets = require('./pets.js');
 
 const printToDom = require('./dom');
 
-let petsArray = [];
+let petArray = [];
 
 const whenPetsLoad = function () {
-  petsArray = JSON.parse(this.responseText).pets;
-  printToDom(petsArray);
+  petArray = JSON.parse(this.responseText).pets;
+  printToDom(petArray);
 };
 
 const whenPetsDefyU = function () {
@@ -18,7 +18,7 @@ const initializer = () => {
 };
 
 const getPets = () => {
-  return petsArray;
+  return petArray;
 };
 
 module.exports = {
