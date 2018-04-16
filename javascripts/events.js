@@ -1,1 +1,1 @@
-const petCards = document.getElementsByClassName('pet');
+const petCards = document.getElementsByClassName('pet-cards');
