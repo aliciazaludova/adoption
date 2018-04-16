@@ -1,3 +1,5 @@
+// XHR call for pets.json
+
 const loadPets = (loadFunction, errorFunction) => {
   const myRequest = new XMLHttpRequest();
   myRequest.addEventListener('load', loadFunction);

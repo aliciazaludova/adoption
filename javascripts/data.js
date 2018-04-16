@@ -1,3 +1,5 @@
+// error and success functions for XHR
+
 const loadPets = require('./pets.js');
 
 const printToDom = require('./dom');

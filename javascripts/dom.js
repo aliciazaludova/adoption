@@ -1,10 +1,12 @@
-const domEvents = require('./events');
+// writes to the dom
 
-const outputDiv = document.getElementById('pets');
+const printToDom = (petArray, divId) => {
+  document.getElementById(divId).innerHTML = petArray;
+};
 
-const domString = (pets) => {
+const buildDomString = (petArray) => {
   let strang = '';
-  pets.forEach((pet) => {
+  petArray.forEach(pet => {
     strang += `<div class="pet-card"`;
     strang += `<img src=${pet.imageUrl}>`;
     strang += `<h2>${pet.name}</h2>`;
@@ -13,12 +15,7 @@ const domString = (pets) => {
     strang += `<p>${pet.type}</p>`;
     strang += `</div>`;
   });
-  return strang;
+  printToDom(strang, 'pets');
 };
 
-const printToDom = (petArray) => {
-  outputDiv.innerHTML = domString(petArray);
-  domEvents();
-};
-
-module.exports = printToDom;
+module.exports = buildDomString;

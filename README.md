@@ -1,10 +1,14 @@
 # Adoption-Website
 ## Description
-## Technologies Used
+[View assignment here](https://github.com/nss-nightclass-projects/adoption-website)
+### Technologies Used
+- HTML5, CSS, JavaScript
 - Bootstrap
 - Browserify
 
-## Screenshot
+### Features
+
+## Screenshots
 
 ## How to Run
 cd to directory in terminal
