@@ -9,6 +9,7 @@ let petArray = [];
 const whenPetsLoad = function () {
   petArray = JSON.parse(this.responseText).pets;
   printToDom(petArray);
+  console.log(petArray);
 };
 
 const whenPetsDefyU = function () {
