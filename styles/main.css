@@ -1,5 +1,7 @@
 body {
   background-color: peachpuff;
+  font-family: 'Skranji', cursive;
+
 }
 
 .button-container {
@@ -7,8 +9,23 @@ body {
 }
 
 .btn {
-  border: 3px solid grey;
+  border: 3px solid rgb(150, 147, 147);
   padding: 15px;
   font-size: 1.5em;
   margin: 10px;
+}
+
+.pet-card {
+  min-height: 400px;
+  max-height: auto;
+  border: 5px solid rgb(150, 147, 147);
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pet-image {
+  max-width: 85%;
+  height: auto;
+  border: 3px solid rgb(150, 147, 147);
 }
