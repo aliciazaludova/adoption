@@ -1,16 +1,13 @@
 // writes to the dom
-
-const outputDiv = document.getElementById('pets');
-
-const printToDom = (petArray) => {
-  outputDiv.innerHTML = buildDomString(petArray);
+const printToDom = (divId, string) => {
+  document.getElementById(divId).innerHTML = string;
 };
 
 const buildDomString = (petArray) => {
   let strang = '';
-  strang += `<div class="container">`;
-  strang += `<div class="row">`;
   petArray.forEach(pet => {
+    strang += `<div class="container">`;
+    strang += `<div class="row">`;
     strang += `<div class="col-sm-4">`;
     strang += `<div class="pet-card panel panel-default">`;
     strang += `<img class="pet-image" src="${pet.imageUrl}">`;
@@ -20,10 +17,10 @@ const buildDomString = (petArray) => {
     strang += `<p>${pet.type}</p>`;
     strang += `</div>`;
     strang += `</div>`;
+    strang += `</div>`;
+    strang += `</div>`;
   });
-  strang += `</div>`;
-  strang += `</div>`;
-  return strang;
+  printToDom('pets', strang);
 };
 
-module.exports = printToDom;
+module.exports = buildDomString;

@@ -1,30 +1,26 @@
 // error and success functions for XHR
 
-const loadPets = require('./pets.js');
+const loadPets = require('./pets');
+// ./pets is pets.js which has initial xhr function which calls the below functions
 
-const printToDom = require('./dom');
+const buildDomString = require('./dom');
+// need domString because it is here that it is used in printToDom
 
-let petArray = [];
+const events = require('./events');
 
 const whenPetsLoad = function () {
-  petArray = JSON.parse(this.responseText).pets;
-  printToDom(petArray);
-  console.log(petArray);
+  const data = JSON.parse(this.responseText).pets;
+  buildDomString(data);
+  events.addEventListener(data);
+  events.showAllPets(data);
 };
 
 const whenPetsDefyU = function () {
-  console.error('pets defy u');
+  alert('pets defy u');
 };
 
 const initializer = () => {
   loadPets(whenPetsLoad, whenPetsDefyU);
 };
 
-const getPets = () => {
-  return petArray;
-};
-
-module.exports = {
-  initializer,
-  getPets,
-};
+module.exports = initializer;

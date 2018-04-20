@@ -4,6 +4,15 @@ body {
 
 }
 
+h1 {
+  font-size: 4em;
+}
+
+.dinocat-img {
+  height: 50%;
+  width: 50%;
+}
+
 .button-container {
   margin-top: 30px;
 }
@@ -22,6 +31,7 @@ body {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 30px;
 }
 
 .pet-image {
