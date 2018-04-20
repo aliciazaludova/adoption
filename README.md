@@ -7,6 +7,8 @@
 - Browserify
 
 ### Features
+## Mock-up given in assignment
+<img width="999" alt="petadoptionmockup" src="https://user-images.githubusercontent.com/33577725/39073738-68bb2c86-44b4-11e8-8703-041aa4ffd983.png">
 
 ## Screenshots
 
