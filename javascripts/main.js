@@ -1,5 +1,9 @@
 // entry point / start application
 
-const data = require('./data');
+const initializer = require('./data');
 
-data.initializer();
+const startApplication = () => {
+  initializer();
+};
+
+startApplication();
