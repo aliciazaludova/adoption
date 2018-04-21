@@ -7,8 +7,8 @@ const buildDomString = (petArray) => {
   let strang = '';
   strang += `<div class="container">`;
   strang += `<div class="row">`;
-  strang += `<div class="col-sm-4">`;
   petArray.forEach(pet => {
+    strang += `<div class="col-sm-4">`;
     strang += `<div class="pet-card panel panel-default">`;
     strang += `<img class="pet-image" src="${pet.imageUrl}">`;
     strang += `<h2>${pet.name}</h2>`;
@@ -16,8 +16,8 @@ const buildDomString = (petArray) => {
     strang += `<p>${pet.specialSkill}</p>`;
     strang += `<p>${pet.type}</p>`;
     strang += `</div>`;
+    strang += `</div>`;
   });
-  strang += `</div>`;
   strang += `</div>`;
   strang += `</div>`;
   printToDom('pets', strang);
