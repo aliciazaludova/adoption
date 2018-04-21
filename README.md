@@ -10,7 +10,8 @@
 #### Mock-up given in assignment
 <img width="999" alt="petadoptionmockup" src="https://user-images.githubusercontent.com/33577725/39073738-68bb2c86-44b4-11e8-8703-041aa4ffd983.png">
 
-## Screenshots
+## Screenshot
+![screencapture-127-0-0-1-8080-2018-04-20-21_39_54](https://user-images.githubusercontent.com/33577725/39079593-88c7af66-44e3-11e8-8f83-3656f244a76c.png)
 
 ## How to Run
 cd to directory in terminal
