@@ -26,7 +26,7 @@ const whenPetsDefyU = function () {
   alert('pets defy u');
 };
 
-// this initializes stuff upon page load
+// this initializes the domString + eventListeners upon page load or an error alert
 const initializer = () => {
   loadPets(whenPetsLoad, whenPetsDefyU);
 };

@@ -39,3 +39,15 @@ h1 {
   height: auto;
   border: 3px solid rgb(150, 147, 147);
 }
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: rgb(114, 144, 207);
+}
+
+.orange {
+  background-color: orange;
+}
